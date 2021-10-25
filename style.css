@@ -66,3 +66,7 @@ label{
     font-size: 12px;
     position: relative;
 }
+.course{
+    max-width: 100%;
+    padding-right: 85px;
+}
