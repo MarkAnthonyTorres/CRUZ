@@ -10,8 +10,8 @@
             <div class="ibg">
                 <div class="button-box">
                     <div id="btn"></div>
-                    <button type="button" class="toggle-btn">Login</button>
-                    <button type="button" class="toggle-btn">Register</button>
+                    <button type="button" class="toggle-btn" onclick="Login()">Login</button>
+                    <button type="button" class="toggle-btn" onclick="Register()">Register</button>
                 </div>
                 <form class="login-group">
                     <input type="text" class="input field" placeholder="Name" required>
@@ -52,7 +52,11 @@
             </div>
         </div>
     </div>
-    
+<script>
+    function Login(){
+        document.location.href="login.html";
+    }
 
+</script>
 </body>
 </html>

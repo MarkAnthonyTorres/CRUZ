@@ -10,8 +10,8 @@
             <div class="ibg">
                 <div class="button-box">
                     <div id="btn"></div>
-                    <button type="button" class="toggle-btn">Login</button>
-                    <button type="button" class="toggle-btn">Register</button>
+                    <button type="button" class="toggle-btn" onclick="Login()">Login</button>
+                    <button type="button" class="toggle-btn" onclick="Register()">Register</button>
                 </div>
                 <form class="login-group">
                     <input type="number" class="input field" placeholder="Student Number" required>
@@ -22,13 +22,16 @@
                     <button type="submit" class="submit-btn">login</button>
                     <br>
                     <button type="submit" class="submit-btn">Forgot Password</button>
-                    <h2>Relative URLs</h2>
-                    <p><a href="\Forgot Password.asp">Forgot Password</a></p>
                 </form>
             </div>
         </div>
     </div>
-    
+
+<script>
+    function Register(){
+        document.location.href="wifi student registration.html";
+    }
+</script>
 
 </body>
 </html>
