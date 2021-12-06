@@ -4,8 +4,6 @@
     <title> Cres Wi-Fi Network Login</title>
     <meta charset="uft-8">
     <meta name="viewfort" content="width=device-width, initial-scale=1 shrink-to-fit=yes">
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewfort" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -22,8 +20,8 @@
                     <button type="button" class="toggle-btn2" onclick="Register()">Register</button>
                 </div>
                 <form class="login-group">
-                    <input type="text" class="input field" placeholder="Name" required>
-                    <input type="number" class="input field" placeholder="Student Number" required>
+                    <input type="text" class="inputfield" placeholder="Name" required>
+                    <input type="number" class="inputfield" placeholder="Student Number" required>
                     <select class="course" name="Course">
                         <option disabled selected>Course</option>
                         <option value="BET-AFT">BET-AFT</option>
@@ -38,18 +36,22 @@
                         <option value="BET-MPET">BET-MPET</option>
                         <option value="BET-COET">BET-COET</option>
                     </select>
-                    <input type="number" class="input field" placeholder="O.R. #" >
-                    <input type="text" class="input field" placeholder="Year/Semester" required>
+                    <input type="number" class="inputfield" placeholder="O.R. #" >
+                    <input type="text" class="inputfield" placeholder="Year/Semester" required>
                     <br>
                     <br>
-                    <input type="text" class="input field" placeholder="System(Desktop/Laptop/Smartphones)" required>
-                    <input type="text" class="input field" placeholder="Device's MAC Address" required>
-                    <input type="email" class="input field" placeholder="Email Address" required>
+                    <input type="text" class="inputfield" placeholder="System(Desktop/Laptop/Smartphones)" required>
+                    <input type="text" class="inputfield" placeholder="Device's MAC Address" required>
+                    <input type="email" class="inputfield" placeholder="Email Address" required>
                     <br>
                     <br>
+                    
+                </form>
+                <form class="regbtn">
                     <button type="submit" class="submit-btn">Register</button>
-                    <br>
-                    <br>
+
+
+                    
                     <input type="checkbox" class="check-box" id="cb" required>
                     <label for="cb">I understand that the Wi-Fi connectivity is provided to me for my academic work only.
                         The above mentioned system solely belongs to me. I have gone through the norms and
