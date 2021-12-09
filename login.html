@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <title> Cres Wi-Fi Network Login</title>
     <meta charset="uft-8">
     <meta name="viewfort" content="width=device-width, initial-scale=1 shrink-to-fit=yes">
@@ -8,30 +9,40 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="js/bootstrap.js">  
     <link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
 <body>
     <div class="bg">
-        <div class="header">Welcome to Cres Wi-Fi Network
+        <div class="header">
+            <nav class="navbar navbar-expand-md navbar-light bg-transaprent">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img src="TUPClogo.png"></a>
+                </div>
+            </nav>
             <div class="ibg">
                 <div class="button-box">
                     <div id="btn"></div>
                     <button type="button" class="toggle-btn1" onclick="Login()">Login</button>
+                    &nbsp;
                     <button type="button" class="toggle-btn2" onclick="Register()">Register</button>
                 </div>
-                <form class="login-group">
-                    <input type="number" class="inputfield" placeholder="Student Number" required>
-                    <input type="text" class="inputfield" placeholder="Password" required>
-                    <br>
-                    <br>
-                    <br>
-                </form>
-                <form class="loginbtn">
-                    <button type="submit" class="submit-btn">Login</button>
-                    <br>
-                    <button type="submit" class="submit-btn">Forgot Password</button>
-                </form>
+                &nbsp;
+                &nbsp;
+                <div class="col-md-fluid">
+                    <label for="Email" class="form-label">Email (This Will Be Your Login)</label>
+                    <input type="email" class="form-control" id="Email">
+                  </div>
+            
+                <div class="col-md-fluid">
+                  <label for="Password" class="form-label" >Set Password</label>
+                  <input type="password" class="form-control" id="Password">
+                </div>
+                &nbsp;
+                &nbsp;
+                <button type="button" class="btn btn-primary">Login</button>
             </div>
         </div>
     </div>

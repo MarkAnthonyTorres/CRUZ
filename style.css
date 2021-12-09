@@ -3,6 +3,11 @@
     padding: 1;
     font-family: sans-serif;
 }
+.navbar-light{
+    background:transparent;
+}
+.navbar-brand{
+}
 .bg{
     height: 100%;
     width: 100%;
@@ -60,7 +65,7 @@
     border-radius: 30px;
     transition: .5s;
 }
-.submit-btn{
+.btn-primary{
     width: 85%;
     padding: 10px 30px;
     cursor: pointer;

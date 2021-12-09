@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <title> Cres Wi-Fi Network Login</title>
     <meta charset="uft-8">
     <meta name="viewfort" content="width=device-width, initial-scale=1 shrink-to-fit=yes">
@@ -8,21 +9,39 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="js/bootstrap.js">  
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <div class="bg">
-        <div class="header">Welcome to Cres Wi-Fi Network
+        <div class="header">
+            <nav class="navbar navbar-expand-md navbar-light bg-transaprent">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img src="TUPClogo.png"></a>
+                </div>
+            </nav>
             <div class="ibg">
                 <div class="button-box">
                     <div id="btn"></div>
                     <button type="button" class="toggle-btn1" onclick="Login()">Login</button>
                     <button type="button" class="toggle-btn2" onclick="Register()">Register</button>
                 </div>
-                <form class="login-group">
-                    <input type="text" class="inputfield" placeholder="Name" required>
-                    <input type="number" class="inputfield" placeholder="Student Number" required>
-                    <select class="course" name="Course">
+                <!--This starts the input areas-->
+                <div class="col-md-fluid">
+                    <label for="Name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="NameReg">
+                  </div>
+            
+                <div class="col-md-fluid">
+                  <label for="Student Number" class="form-label" >Student Number</label>
+                  <input type="number" class="form-control" id="IDnumber">
+                </div>
+
+                <div class="col-md-fluid">
+                    <div>
+                      <label for="Course" class="form-label" >Course</label>
+                      <select id="Course" class="form-select">
                         <option disabled selected>Course</option>
                         <option value="BET-AFT">BET-AFT</option>
                         <option value="BET-AET">BET-AET</option>
@@ -34,24 +53,41 @@
                         <option value="BET-GAPT">BET-GAPT</option>
                         <option value="BET-ICET">BET-ICET</option>
                         <option value="BET-MPET">BET-MPET</option>
-                        <option value="BET-COET">BET-COET</option>
-                    </select>
-                    <input type="number" class="inputfield" placeholder="O.R. #" >
-                    <input type="text" class="inputfield" placeholder="Year/Semester" required>
-                    <br>
-                    <br>
-                    <input type="text" class="inputfield" placeholder="System(Desktop/Laptop/Smartphones)" required>
-                    <input type="text" class="inputfield" placeholder="Device's MAC Address" required>
-                    <input type="email" class="inputfield" placeholder="Email Address" required>
-                    <br>
-                    <br>
-                    
-                </form>
+                        <option value="BET-COET">BET-COET</option>>
+                      </select>
+                  </div>
+            
+                <div class="col-md-fluid">
+                  <label for="O.R#" class="form-label" >O.R #</label>
+                  <input type="number" class="form-control" id="ORnumber">
+                </div>
+
+                <div class="col-md-fluid">
+                    <label for="Year/Semester" class="form-label" >Year/Semester</label>
+                    <input type="text" class="form-control" id="YrSem">
+                </div>
+
+                <div class="col-md-fluid">
+                    <label for="System(Desktop/Laptop/Smartphones)" class="form-label" >System(Desktop/Laptop/Smartphones)</label>
+                    <input type="text" class="form-control" id="DeviceSpec">
+                </div>
+
+                <div class="col-md-fluid">
+                    <label for="Device's MAC Address" class="form-label" >Device's MAC Addres</label>
+                    <input type="text" class="form-control" id="DeviceMac">
+                </div>
+                
+                <div class="col-md-fluid">
+                    <label for="Email" form-label">Email</label>
+                    <input type="email" class="form-control" id="EmailReg">
+                </div>
+                &nbsp; 
+                &nbsp;
+                &nbsp;
                 <form class="regbtn">
-                    <button type="submit" class="submit-btn">Register</button>
-
-
-                    
+                    <button type="submit" class="btn btn-primary">Register</button>
+                    &nbsp;
+                    &nbsp;
                     <input type="checkbox" class="check-box" id="cb" required>
                     <label for="cb">I understand that the Wi-Fi connectivity is provided to me for my academic work only.
                         The above mentioned system solely belongs to me. I have gone through the norms and
