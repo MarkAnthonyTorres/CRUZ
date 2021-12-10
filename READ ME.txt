@@ -4,5 +4,7 @@
 
 *The second site is the "login"
 
+*The third site is the "Session Expired" which serves as a prompt site
+
 *backup scratch is just a scratch html code,it is not a main site.
 
