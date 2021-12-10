@@ -1,0 +1,8 @@
+12/9/2021
+
+*The Main Site is the "wifi student registration"
+
+*The second site is the "login"
+
+*backup scratch is just a scratch html code,it is not a main site.
+
