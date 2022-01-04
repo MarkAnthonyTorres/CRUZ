@@ -39,7 +39,7 @@
                     </div>  
                 </nav>
             </div>
-            <div class="SessionBg">
+            <div class="ibg">
                 <div class="button-box">
                     <div id="btn"></div>
                     <button type="button" class="toggle-btn1" onclick="Login()">Login</button>
@@ -48,40 +48,12 @@
                 </div>
                 &nbsp;
                 &nbsp;
-                <div class="col-md-fluid">
-                    <label for="Email" class="form-label">Email (This Will Be Your Login)</label>
-                    <input type="email" class="form-control" id="Email">
-                  </div>
-            
-                <div class="col-md-fluid">
-                  <label for="Password" class="form-label" >Set Password</label>
-                  <input type="password" class="form-control" id="Password">
-                </div>
-                &nbsp;
-                &nbsp;
-                <button type="button" class="btn btn-primary" id="Loginsub">Login</button>
-                &nbsp;
-                &nbsp;
-                </div>
+                
             </div>
         </div>
     </div>
 
 <script>
-    let emailget = document.querySelector("#Email");
-    let passget = document.querySelector("#Password");
-    let GetLogin = document.querySelector("#Loginsub");
-
-    function Register(){
-        document.location.href="wifi student registration.html";
-    }
-
-    GetLogin.addEventListener('click',() =>{
-        var eg = emailget.value;
-        var pg = passget.value;
-        
-    });
 </script>
-
 </body>
 </html>
