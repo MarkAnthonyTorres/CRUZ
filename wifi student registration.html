@@ -26,10 +26,10 @@
                     <div class="collapse navbar-collapse" id="collapsibleNavbar">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
+                                <a class="nav-link" href="Test Output Reg.html">RegList</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
+                                <a class="nav-link" href="Test Output Log.html">LogList</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Link</a>
@@ -102,10 +102,10 @@
                 &nbsp;
                 &nbsp;
                 <form class="regbtn">
-                    <button type="submit" class="btn btn-primary" onclick="regsubmit()" id="regbtn">Register</button>
+                    <button type="submit" class="btn btn-primary"  id="Regbtn">Register</button>
                     &nbsp;
                     &nbsp;
-                    <input type="checkbox" class="check-box" id="cb" required>
+                    <input type="checkbox" class="check-box"  id="cb" required>
                     <label for="cb">I understand that the Wi-Fi connectivity is provided to me for my academic work only.
                         The above mentioned system solely belongs to me. I have gone through the norms and
                         Regulation of using the Wi-Fi Connectivity and I abide by it. I will not misuse the facility
@@ -115,47 +115,7 @@
             </div>
         </div>
     </div>
-<script>
-    var Reglist = []
-
-    let GetNameReg = document.querySelector("#NameReg");
-    let GetIDnumber = document.querySelector("#IDnumber");
-    let GetCourse = document.querySelector("#Course");
-    let GetORnumber = document.querySelector("#ORnumber");
-    let GetYrSem = document.querySelector("#YrSem");
-    let GetDeviceSpec = document.querySelector("#DeviceSpec");
-    let GetDeviceMac = document.querySelector("#DeviceMac");
-    let GetEmailReg = document.querySelector("#EmailReg");
-    let RegGet = document.querySelector("#regbtn");
-
-    function Login(){
-        document.location.href="login.html";
-    }
-
-    RegGet.addEventListener('click',() =>{
-        var GNR = GetNameReg.value;
-        var GID = GetIDnumber.value;
-        var GC = GetCourse.value;
-        var GOR = GetORnumber.value;
-        var GYS = GetYrSem.value;
-        var GDS = GetDeviceSpec.value;
-        var GDM = GetDeviceMac.value;
-        var GER = GetEmailReg.value;
-
-        console.log(GNR);
-        console.log(GID);
-        console.log(GC);
-        console.log(GOR);
-        console.log(GYS);
-        console.log(GDS);
-        console.log(GDM);
-        console.log(GER);
-    });
-
-
-    
-
-
+<script src="regcommon.js">
 </script>
 </body>
 </html>
