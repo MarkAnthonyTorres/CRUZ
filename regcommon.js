@@ -1,21 +1,21 @@
 var Reglist = []
 
-let GetNameReg = document.querySelector("#NameReg");
-let GetIDnumber = document.querySelector("#IDnumber");
-let GetCourse = document.querySelector("#Course");
-let GetORnumber = document.querySelector("#ORnumber");
-let GetYrSem = document.querySelector("#YrSem");
-let GetDeviceSpec = document.querySelector("#DeviceSpec");
-let GetDeviceMac = document.querySelector("#DeviceMac");
-let GetEmailReg = document.querySelector("#EmailReg");
-let RegGet = document.querySelector("#Regbtn");
+var GetNameReg = document.getElementById("NameReg");
+var GetIDnumber = document.getElementById("IDnumber");
+var GetCourse = document.getElementById("Course");
+var GetORnumber = document.getElementById("ORnumber");
+var GetYrSem = document.getElementById("YrSem");
+var GetDeviceSpec = document.getElementById("DeviceSpec");
+var GetDeviceMac = document.getElementById("DeviceMac");
+var GetEmailReg = document.getElementById("EmailReg");
+var RegGet = document.getElementById("Regbtn");
 
     
     function Login(){
         document.location.href="login.html";
     }
 
-    RegGet.addEventListener('click',() =>{
+    function Regbut(){
         var GNR = GetNameReg.value;
         var GID = GetIDnumber.value;
         var GC = GetCourse.value;
@@ -33,7 +33,7 @@ let RegGet = document.querySelector("#Regbtn");
         console.log(GDS);
         console.log(GDM);
         console.log(GER);
-    });
+    };
 
 
 

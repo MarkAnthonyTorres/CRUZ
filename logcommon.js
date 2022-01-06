@@ -1,16 +1,16 @@
-let emailget = document.querySelector("#Email");
-let passget = document.querySelector("#Password");
-let GetLogin = document.querySelector("#Loginsub");
+var emailget = document.getElementById("Email");
+var passget = document.getElementById("Password");
+var GetLogin = document.getElementById("Loginsub");
 
     function Register(){
         document.location.href="wifi student registration.html";
     }
 
-    GetLogin.addEventListener('click',() =>{
+    function Logbut(){
         var eg = emailget.value;
         var pg = passget.value;
 
         console.log(eg);
         console.log(pg);
         
-    });
+    };
