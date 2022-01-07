@@ -1,3 +1,5 @@
+var Reglist =[]
+
 var GetNameReg = document.getElementById("NameReg");
 var GetIDnumber = document.getElementById("IDnumber");
 var GetCourse = document.getElementById("Course");
