@@ -145,3 +145,14 @@ let Reglist = [
     DMAlist = [],
     Elist = [],
 ];
+
+var regbtn = document.getElementById("Regbtn");
+    regbtn.addEventListener("click",Regbut);
+
+if(!GNR || !GID || !GC || !GOR || !GYS || !GDS || !GDM || !GER ){
+    alert("Please fill the neccessary information");
+    return;
+}
+
+if(regbtn){
+        regbtn.addEventListener('click', swapper, false);

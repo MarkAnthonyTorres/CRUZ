@@ -1,3 +1,4 @@
+
 var row = 1;
 var GetNameReg = document.getElementById("NameReg");
 var GetIDnumber = document.getElementById("IDnumber");
@@ -8,26 +9,34 @@ var GetDeviceSpec = document.getElementById("DeviceSpec");
 var GetDeviceMac = document.getElementById("DeviceMac");
 var GetEmailReg = document.getElementById("EmailReg");
 var RegGet = document.getElementById("Regbtn");
-
     
+    window.onload=function(){
+        var regbtn = document.getElementById("Regbtn");
+        regbtn.addEventListener("click",registerbutton);
+    }
     function Login(){
         document.location.href="login.html";
     }
 
-    function Regbut(){
+    function registerbutton(){
         var GNR = GetNameReg.value;
+        localStorage.setItem("passGNR",GNR);
         var GID = GetIDnumber.value;
+        localStorage.setItem("passGID",GID);
         var GC = GetCourse.value;
+        localStorage.setItem("passGC",GC);
         var GOR = GetORnumber.value;
+        localStorage.setItem("passGOR",GOR);
         var GYS = GetYrSem.value;
+        localStorage.setItem("passGYS",GYS);
         var GDS = GetDeviceSpec.value;
+        localStorage.setItem("passGDS",GDS);
         var GDM = GetDeviceMac.value;
+        localStorage.setItem("passGDM",GDM);
         var GER = GetEmailReg.value;
+        localStorage.setItem("passGER",GER);
 
-        if(!GNR || !GID || !GC || !GOR || !GYS || !GDS || !GDM || !GER ){
-            alert("Please fill the neccessary information");
-            return;
-        }
+        
 
         console.log(GNR);
         console.log(GID);
@@ -50,14 +59,14 @@ var RegGet = document.getElementById("Regbtn");
         var cell8 = newrow.insertCell(7);
         
 
-        cell1.innerHTML = GNR;
-        cell2.innerHTML = GID;
-        cell3.innerHTML = GC;
-        cell4.innerHTML = GOR;
-        cell5.innerHTML = GYS;
-        cell6.innerHTML = GDS;
-        cell7.innerHTML = GDM;
-        cell8.innerHTML = GER;
+        cell1.innerHTML = localStorage.getItem("passGNR");
+        cell2.innerHTML = localStorage.getItem("passGID");
+        cell3.innerHTML = localStorage.getItem("passGC");
+        cell4.innerHTML = localStorage.getItem("passGOR");
+        cell5.innerHTML = localStorage.getItem("passGYS");
+        cell6.innerHTML = localStorage.getItem("passGDS");
+        cell7.innerHTML = localStorage.getItem("passGDM");
+        cell8.innerHTML = localStorage.getItem("passGER");
 
         row++;
     };

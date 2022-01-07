@@ -1,5 +1,3 @@
-var Reglist = []
-
 var GetNameReg = document.getElementById("NameReg");
 var GetIDnumber = document.getElementById("IDnumber");
 var GetCourse = document.getElementById("Course");
@@ -8,9 +6,16 @@ var GetYrSem = document.getElementById("YrSem");
 var GetDeviceSpec = document.getElementById("DeviceSpec");
 var GetDeviceMac = document.getElementById("DeviceMac");
 var GetEmailReg = document.getElementById("EmailReg");
-var RegGet = document.getElementById("Regbtn");
 
-    
+    function enable(){
+        var cbox = document.getElementById("cb");
+        var rbtn = document.getElementById("Regbtn");
+        if (cbox.checked){
+            rbtn.removeAttribute("disabled")
+
+        }
+    }
+
     function Login(){
         document.location.href="login.html";
     }
