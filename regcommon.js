@@ -7,19 +7,10 @@ var GetDeviceSpec = document.getElementById("DeviceSpec");
 var GetDeviceMac = document.getElementById("DeviceMac");
 var GetEmailReg = document.getElementById("EmailReg");
 
-    function enable(){
-        var cbox = document.getElementById("cb");
-        var rbtn = document.getElementById("Regbtn");
-        if (cbox.checked){
-            rbtn.removeAttribute("disabled")
-
-        }
-    }
-
     function Login(){
         document.location.href="login.html";
-    }
-
+    };
+    
     function Regbut(){
         var GNR = GetNameReg.value;
         var GID = GetIDnumber.value;
@@ -39,6 +30,15 @@ var GetEmailReg = document.getElementById("EmailReg");
         console.log(GDM);
         console.log(GER);
     };
+
+    function enable(){
+        var cbox = document.getElementById("cb");
+        var rbtn = document.getElementById("registerbtn");
+            if (cbox.checked){
+                rbtn.removeAttribute("disabled");
+            };
+    };
+
 
 
 
