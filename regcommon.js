@@ -3,6 +3,7 @@ RAbtn.addEventListener("click",displayinputs);
 
 var row = 1;
 function displayinputs(){
+    //gets the appopriate elements through their id and assign it to an variable//
     var GetNameReg = document.getElementById("NameReg");
     var GetIDnumber = document.getElementById("IDnumber");
     var GetCourse = document.getElementById("Course");
@@ -13,7 +14,7 @@ function displayinputs(){
     var GetEmailReg = document.getElementById("EmailReg");
 
     var display = document.getElementById("Reglist");
-
+    
     var newrow = display.insertRow(row);
 
     var cell1 = newrow.insertCell(0);
@@ -25,6 +26,7 @@ function displayinputs(){
     var cell7 = newrow.insertCell(6);
     var cell8 = newrow.insertCell(7);
 
+    //assign the cells to the values of the acquire user input elements and their values//
     cell1.innerHTML = GetNameReg.value;
     cell2.innerHTML = GetIDnumber.value;
     cell3.innerHTML = GetCourse.value;
@@ -34,6 +36,7 @@ function displayinputs(){
     cell7.innerHTML = GetDeviceMac.value;
     cell8.innerHTML = GetEmailReg.value;
 
+    //print the values to the console to test//
     console.log(GetNameReg.value);
     console.log(GetIDnumber.value);
     console.log(GetCourse.value);
@@ -42,7 +45,6 @@ function displayinputs(){
     console.log(GetDeviceSpec.value);
     console.log(GetDeviceMac.value);
     console.log(GetEmailReg.value);
-
 
     row++;
 }
