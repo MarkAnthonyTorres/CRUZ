@@ -34,5 +34,15 @@ function displayinputs(){
     cell7.innerHTML = GetDeviceMac.value;
     cell8.innerHTML = GetEmailReg.value;
 
+    console.log(GetNameReg.value);
+    console.log(GetIDnumber.value);
+    console.log(GetCourse.value);
+    console.log(GetORnumber.value);
+    console.log(GetYrSem.value);
+    console.log(GetDeviceSpec.value);
+    console.log(GetDeviceMac.value);
+    console.log(GetEmailReg.value);
+
+
     row++;
 }
