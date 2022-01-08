@@ -1,3 +1,12 @@
+1/02/2022
+*Added 3 test sites (Test output log, Test output Reg and Session Expired)
+
+*Added 3 js scripts
+
+*main script file is common.js which is used and shared by both the registration and login html
+
+* the other 2, logcommon and regcommon are used as a scratch js file
+
 12/9/2021
 
 *The Main Site is the "wifi student registration"
