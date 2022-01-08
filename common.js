@@ -1,12 +1,4 @@
-var Regname = [];
-var RegID = [];
-var RegCourse = [];
-var RegOR = [];
-var RegYS = [];
-var RegDS = [];
-var RegDM = [];
-var RegEmail = [];
-
+//assign variables to the user input elements//
 var GetNameReg = document.getElementById("NameReg");
 var GetIDnumber = document.getElementById("IDnumber");
 var GetCourse = document.getElementById("Course");
@@ -31,15 +23,6 @@ var RegGet = document.getElementById("Regbtn");
         var GDS = GetDeviceSpec.value;
         var GDM = GetDeviceMac.value;
         var GER = GetEmailReg.value;
-
-        Regname.push(GNR);
-        RegID.push(GID);
-        RegCourse.push(GC);
-        RegOR.push(GOR);
-        RegYS.push(GYS);
-        RegDS.push(GDS);
-        RegDM.push(GDM);
-        RegEmail.push(GER);
 
         console.log(GNR);
         console.log(GID);

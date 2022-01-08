@@ -171,3 +171,21 @@ function Append(){
     </tbody>
 <table>
 </div>
+
+Regname.push(GNR);
+        RegID.push(GID);
+        RegCourse.push(GC);
+        RegOR.push(GOR);
+        RegYS.push(GYS);
+        RegDS.push(GDS);
+        RegDM.push(GDM);
+        RegEmail.push(GER);
+
+var Regname = [];
+var RegID = [];
+var RegCourse = [];
+var RegOR = [];
+var RegYS = [];
+var RegDS = [];
+var RegDM = [];
+var RegEmail = [];
