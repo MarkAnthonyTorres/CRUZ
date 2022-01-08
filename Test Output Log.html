@@ -44,39 +44,33 @@
                 <div class="col-md-fluid">
                     <label for="Email" class="form-label">Email (This Will Be Your Login)</label>
                     <input type="email" class="form-control" id="Email">
-                  </div>
-            
+                </div>
+                &nbsp;
+                &nbsp;
                 <div class="col-md-fluid">
                   <label for="Password" class="form-label" >Set Password</label>
                   <input type="password" class="form-control" id="Password">
                 </div>
                 &nbsp;
                 &nbsp;
-                <button type="button" class="btn btn-primary" onclick="Logbut()" id="Loginsub">Login</button>
+                <button type="button" class="btn btn-primary" id="Loginsub">Login</button>
                 &nbsp;
                 &nbsp;
                 </div>
                 <div class="TableBg">
                     &nbsp;
                     &nbsp;
-                    <table class ="table">
-                        <thead>
-                            <tr>
-                                <th scope="col">Name</th>
-                                <th scope="col">ID Number</th>
-                            </tr>
-                        </thead>
-                        <tbody id="Loglist">
-                            <tr>
-                                <td></td>
-                            </tr>
-                        </tbody>
+                    <table class ="table" id="Loglist">
+                        <tr>
+                            <th>Email</th>
+                            <th>Password</th>
+                        </tr>
                     <table>
                 </div>
             </div>
         </div>
     </div>
-<script>
+<script src="logcommon.js">
 </script>
 </body>
 </html>
