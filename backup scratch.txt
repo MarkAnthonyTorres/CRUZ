@@ -134,3 +134,40 @@
             
         });
         
+var Regname = ["Mark Anthony Joseph Torres","Felix Eugene Cruz"];
+var RegID = [190226,12351];
+var RegCourse = ["BET-COET","BET-ECET"];
+var RegOR = [1,2];
+var RegYS = ["3rd Year / 1st sem","2nd year / 2 sem"];
+var RegDS = ["IBM Selectric","Iphone 11 pro max plus"];
+var RegDM = ["EA:D6:26:D4:BA:11","D4:0F:90:DD:21:34"];
+var RegEmail = ["sekibanki.touhou.chan@gmail.com","markanthonyjoseph.torres@gsfe.tupcavite.edu,ph"];
+
+function Append(){
+    var RN=
+    var RID=
+    var =
+    var = 
+    var =
+    var =
+    var =
+    var =
+}
+
+<div class="TableBg">
+&nbsp;
+&nbsp;
+<table class ="table">
+    <thead>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">ID Number</th>
+        </tr>
+    </thead>
+    <tbody id="Reglist">
+        <tr>
+
+        </tr>
+    </tbody>
+<table>
+</div>

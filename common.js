@@ -1,4 +1,11 @@
-var Reglist = []
+var Regname = [];
+var RegID = [];
+var RegCourse = [];
+var RegOR = [];
+var RegYS = [];
+var RegDS = [];
+var RegDM = [];
+var RegEmail = [];
 
 var GetNameReg = document.getElementById("NameReg");
 var GetIDnumber = document.getElementById("IDnumber");
@@ -25,6 +32,15 @@ var RegGet = document.getElementById("Regbtn");
         var GDM = GetDeviceMac.value;
         var GER = GetEmailReg.value;
 
+        Regname.push(GNR);
+        RegID.push(GID);
+        RegCourse.push(GC);
+        RegOR.push(GOR);
+        RegYS.push(GYS);
+        RegDS.push(GDS);
+        RegDM.push(GDM);
+        RegEmail.push(GER);
+
         console.log(GNR);
         console.log(GID);
         console.log(GC);
@@ -33,7 +49,9 @@ var RegGet = document.getElementById("Regbtn");
         console.log(GDS);
         console.log(GDM);
         console.log(GER);
+        
     };
+
 var emailget = document.getElementById("Email");
 var passget = document.getElementById("Password");
 var GetLogin = document.getElementById("Loginsub");

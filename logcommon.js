@@ -1,16 +1,7 @@
-var emailget = document.getElementById("Email");
-var passget = document.getElementById("Password");
-var GetLogin = document.getElementById("Loginsub");
+var LogName = [];
+var LogID = [];
 
-    function Register(){
-        document.location.href="wifi student registration.html";
-    }
+LogName.forEach(function(item){
+    console.log(item)
+});
 
-    function Logbut(){
-        var eg = emailget.value;
-        var pg = passget.value;
-
-        console.log(eg);
-        console.log(pg);
-        
-    };

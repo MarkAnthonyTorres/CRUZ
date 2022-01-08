@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
     <title> Cres Wi-Fi Network Login</title>
     <meta charset="uft-8">
     <meta name="viewfort" content="width=device-width, initial-scale=1 shrink-to-fit=yes">
@@ -19,7 +18,7 @@
         <div class="header">
             <div class="container-fluid">
                 <nav class="navbar navbar-expand-md navbar-light bg-transaprent">
-                    <a class="navbar-brand" href="#"><img src="TUPClogo1.png"> TUPC WIFI REGISTRATION</a>
+                    <a class="navbar-brand mb-0 h1" href="#"><img src="TUPClogo1.png"> TUPC WIFI REGISTRATION</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -29,41 +28,122 @@
                                 <a class="nav-link" href="wifi student registration.html">Registration</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="login.html">Login</a>
+                                <a class="nav-link" href="Test Output Log.html">LogList</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="Test Output Log.html">Loglist</a>
+                                <a class="nav-link" href="Session Expired.html">Session Expire Page</a>
                             </li>    
                         </ul>
-                    </div>  
+                    </div>
                 </nav>
             </div>
+            <div class="ibg">
+                <!--This starts the input areas-->
+                <div class="col-md-fluid">
+                    <label for="Name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="NameReg">
+                  </div>
+            
+                <div class="col-md-fluid">
+                  <label for="Student Number" class="form-label" >Student Number</label>
+                  <input type="number" class="form-control" id="IDnumber">
+                </div>
+
+                <div class="col-md-fluid">
+                    <div>
+                      <label for="Course" class="form-label" >Course</label>
+                      <select id="Course" class="form-select">
+                        <option disabled selected>Course</option>
+                        <option value="BET-AFT">BET-AFT</option>
+                        <option value="BET-AET">BET-AET</option>
+                        <option value="BET-CET">BET-CET</option>
+                        <option value="BET-EET">BET-EET</option>
+                        <option value="BET-ECET">BET-ECET</option>
+                        <option value="BET-EsET">BET-EsET</option>
+                        <option value="BET-FET">BET-FET</option>
+                        <option value="BET-GAPT">BET-GAPT</option>
+                        <option value="BET-ICET">BET-ICET</option>
+                        <option value="BET-MPET">BET-MPET</option>
+                        <option value="BET-COET">BET-COET</option>>
+                      </select>
+                    </div>
+                </div>
+
+                <div class="col-md-fluid">
+                  <label for="O.R#" class="form-label" >O.R #</label>
+                  <input type="number" class="form-control" id="ORnumber">
+                </div>
+
+                <div class="col-md-fluid">
+                    <label for="Year/Semester" class="form-label" >Year/Semester</label>
+                    <input type="text" class="form-control" id="YrSem">
+                </div>
+
+                <div class="col-md-fluid">
+                    <label for="System(Desktop/Laptop/Smartphones)" class="form-label" >System(Desktop/Laptop/Smartphones)</label>
+                    <input type="text" class="form-control" id="DeviceSpec">
+                </div>
+
+                <div class="col-md-fluid">
+                    <label for="Device's MAC Address" class="form-label" >Device's MAC Addres</label>
+                    <input type="text" class="form-control" id="DeviceMac">
+                </div>
+                
+                <div class="col-md-fluid">
+                    <label for="Email" class= "form-label">Email</label>
+                    <input type="email" class="form-control" id="EmailReg">
+                </div>
+                &nbsp; 
+                &nbsp;
+                &nbsp;
+                <!--Registration Button-->
+                <form class="regbtn">
+                    <button type="submit" class="btn btn-primary" onclick="Regbut()"  id="Registerbtn">Register</button>
+                    &nbsp;
+                    &nbsp;
+                    <input type="checkbox" class="check-box" id="cb" required>
+                    <label for="cb">I understand that the Wi-Fi connectivity is provided to me for my academic work only.
+                        The above mentioned system solely belongs to me. I have gone through the norms and
+                        Regulation of using the Wi-Fi Connectivity and I abide by it. I will not misuse the facility
+                        by any means
+                    </label>
+                </form>
+                &nbsp;
+                &nbsp;
+            </div>
+            &nbsp;
+            &nbsp;
             <div class="TableBg">
-                &nbsp;
-                &nbsp;
                 <table class ="table">
                     <thead>
                         <tr>
                             <th scope="col">Name</th>
-                            <th scope="col">ID Number</th>
-                            <th scope="col">Course</th>
-                            <th scope="col">Year and Semester</th>
-                            <th scope="col">OR Number</th>
-                            <th scope="col">Device Specifications</th>
-                            <th scope="col">Device Mac Address</th>
+                            <th scope="col">ID number</th>
+                            <th scope="col">Couse</th>
+                            <th scope="col">O.R. Number</th>
+                            <th scope="col">Year/Semester</th>
+                            <th scope="col">Device name</th>
+                            <th scope="col">Device Mac Address</th>>
                             <th scope="col">Email</th>
                         </tr>
                     </thead>
                     <tbody id="Reglist">
                         <tr>
-
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                         </tr>
                     </tbody>
                 <table>
             </div>
         </div>
     </div>
-<script>
+<script src="regcommon.js">
 </script>
 </body>
 </html>
