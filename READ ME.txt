@@ -1,13 +1,20 @@
-<<<<<<< HEAD
+
 1/02/2022
 *Added 3 test sites (Test output log, Test output Reg and Session Expired)
 
 *Added 3 js scripts
 
-*main script file is common.js which is used and shared by both the registration and login html
+*main script file is common.js which is used and shared bythe registration, login html and session expired.html
 
-* the other 2, logcommon and regcommon are used as a scratch js file
+* the other 2, logcommon and regcommon are used by Test Output Log and Test Output Reg, 
+in which shows user input to append into table
+
+
+
 =======
+
+
+
 1/8/2022
 *3 test sites added (test output reg, test output log and session expire)
 
