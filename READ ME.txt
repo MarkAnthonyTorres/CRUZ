@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 1/02/2022
 *Added 3 test sites (Test output log, Test output Reg and Session Expired)
 
@@ -6,6 +7,12 @@
 *main script file is common.js which is used and shared by both the registration and login html
 
 * the other 2, logcommon and regcommon are used as a scratch js file
+=======
+1/8/2022
+*3 test sites added (test output reg, test output log and session expire)
+
+*3 js files added (logcommon for login.html and regcommon for the registration site)
+>>>>>>> 0a115eea1010ec265ccf84f9b1b9973fb07367da
 
 12/9/2021
 

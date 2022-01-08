@@ -21,7 +21,7 @@ var RegGet = document.getElementById("Regbtn");
     function Login(){
         document.location.href="login.html";
     }
-
+//Regbut gets the inputs value and displays them through the console//
     function Regbut(){
         var GNR = GetNameReg.value;
         var GID = GetIDnumber.value;
@@ -51,7 +51,7 @@ var RegGet = document.getElementById("Regbtn");
         console.log(GER);
         
     };
-
+//Same tactic as the getting of inputs from the registration and displays then through the console//
 var emailget = document.getElementById("Email");
 var passget = document.getElementById("Password");
 var GetLogin = document.getElementById("Loginsub");
@@ -69,6 +69,7 @@ var GetLogin = document.getElementById("Loginsub");
         
     };
 
+//Used for returning to registration page//
 function Return(){
 document.location.href="wifi student registration.html";
 }

@@ -23,7 +23,7 @@
     font-style: italic;
 }
 .ibg{
-    height: 800px;
+    height: 700px;
     width:380px;
     position: relative;
     margin: 6% auto;
@@ -123,3 +123,5 @@ label{
 .text-center{
     font-size: 25px;
 }
+
+
