@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Cres Wi-Fi Network Login</title>
+    <meta charset="uft-8">
+    <meta name="viewfort" content="width=device-width, initial-scale=1 shrink-to-fit=yes">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="js/bootstrap.js">  
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="TUPClogo1.png">
+</head>
+<body>
+    <div class="bg">
+        <div class="header">
+            <div class="container-fluid">
+                <!--The Navbar coontaining the links to other sites-->
+                <nav class="navbar navbar-expand-md navbar-light bg-transaprent">
+                    <a class="navbar-brand mb-0 h1" href="#"><img src="TUPClogo1.png"> TUPC WIFI REGISTRATION</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="Test Output Reg.html">RegList</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Test Output Log.html">LogList</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Session Expired.html">Session Expire Page</a>
+                            </li>    
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="ibg">
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button type="button" class="toggle-btn1" onclick="Login()">Login</button>
+                    <button type="button" class="toggle-btn2" onclick="Register()">Register</button>
+                </div>
+                <!--This starts the input areas-->
+                <div class="col-md-fluid">
+                    <label for="Name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="NameReg">
+                  </div>
+            
+                <div class="col-md-fluid">
+                  <label for="Student Number" class="form-label" >Student Number</label>
+                  <input type="number" class="form-control" id="IDnumber">
+                </div>
+
+                <div class="col-md-fluid">
+                    <div>
+                      <label for="Course" class="form-label" >Course</label>
+                      <select id="Course" class="form-select">
+                        <option disabled selected>Course</option>
+                        <option value="BET-AFT">BET-AFT</option>
+                        <option value="BET-AET">BET-AET</option>
+                        <option value="BET-CET">BET-CET</option>
+                        <option value="BET-EET">BET-EET</option>
+                        <option value="BET-ECET">BET-ECET</option>
+                        <option value="BET-EsET">BET-EsET</option>
+                        <option value="BET-FET">BET-FET</option>
+                        <option value="BET-GAPT">BET-GAPT</option>
+                        <option value="BET-ICET">BET-ICET</option>
+                        <option value="BET-MPET">BET-MPET</option>
+                        <option value="BET-COET">BET-COET</option>>
+                      </select>
+                  </div>
+            
+                <div class="col-md-fluid">
+                  <label for="O.R#" class="form-label" >O.R #</label>
+                  <input type="number" class="form-control" id="ORnumber">
+                </div>
+
+                <div class="col-md-fluid">
+                    <label for="Year/Semester" class="form-label" >Year/Semester</label>
+                    <input type="text" class="form-control" id="YrSem">
+                </div>
+
+                <div class="col-md-fluid">
+                    <label for="System(Desktop/Laptop/Smartphones)" class="form-label" >System(Desktop/Laptop/Smartphones)</label>
+                    <input type="text" class="form-control" id="DeviceSpec">
+                </div>
+
+                <div class="col-md-fluid">
+                    <label for="Device's MAC Address" class="form-label" >Device's MAC Addres</label>
+                    <input type="text" class="form-control" id="DeviceMac">
+                </div>
+                
+                <div class="col-md-fluid">
+                    <label for="Email" class= "form-label">Email</label>
+                    <input type="email" class="form-control" id="EmailReg">
+                </div>
+                &nbsp; 
+                &nbsp;
+                &nbsp;
+                <!--Registration Button-->
+                <form class="regbtn">
+                    <button type="submit" class="btn btn-primary" onclick="Regbut()"  id="Registerbtn">Register</button>
+                    &nbsp;
+                    &nbsp;
+                    <input type="checkbox" class="check-box" id="cb" required>
+                    <label for="cb">I understand that the Wi-Fi connectivity is provided to me for my academic work only.
+                        The above mentioned system solely belongs to me. I have gone through the norms and
+                        Regulation of using the Wi-Fi Connectivity and I abide by it. I will not misuse the facility
+                        by any means
+                    </label>
+                </form>
+            </div>
+        </div>
+    </div>
+<script src="common.js">
+</script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title> Cres Wi-Fi Network Login</title>
+    <meta charset="uft-8">
+    <meta name="viewfort" content="width=device-width, initial-scale=1 shrink-to-fit=yes">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="js/bootstrap.js">  
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="TUPClogo1.png">
+</head>
+<body>
+    <div class="bg">
+        <div class="header">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-md navbar-light bg-transaprent">
+                    <a class="navbar-brand" href="#"><img src="TUPClogo1.png"> TUPC WIFI REGISTRATION</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="Test Output Reg.html">RegList</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Test Output Log.html">LogList</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Session Expired.html">Session Expire Page</a>
+                            </li>    
+                        </ul>
+                    </div>  
+                </nav>
+            </div>
+            <div class="SessionBg">
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button type="button" class="toggle-btn1" onclick="Login()">Login</button>
+                    &nbsp;
+                    <button type="button" class="toggle-btn2" onclick="Register()">Register</button>
+                </div>
+                &nbsp;
+                &nbsp;
+                <div class="col-md-fluid">
+                    <label for="Email" class="form-label">Email (This Will Be Your Login)</label>
+                    <input type="email" class="form-control" id="Email">
+                  </div>
+            
+                <div class="col-md-fluid">
+                  <label for="Password" class="form-label" >Set Password</label>
+                  <input type="password" class="form-control" id="Password">
+                </div>
+                &nbsp;
+                &nbsp;
+                <button type="button" class="btn btn-primary" onclick="Logbut()" id="Loginsub">Login</button>
+                &nbsp;
+                &nbsp;
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="common.js">
+</script>
+</body>
+</html>
