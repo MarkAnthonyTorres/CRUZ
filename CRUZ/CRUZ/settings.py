@@ -12,6 +12,12 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 from pathlib import Path
 
+import os
+
+SETTING_PATH = os.path.dirname(os.path.dirname(__file__))
+templates = [{'DIRS':[os.path.join(SETTING_PATH.'templates')]}]
+INSTALLED_APPS = [WifiApp,]
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
